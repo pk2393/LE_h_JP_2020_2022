@@ -1,5 +1,5 @@
 rm(list=ls())
-library(dplyr)
+library(dplyr);library(magrittr)
 
 load(file="life_table_2000_2022.RData")
 
