@@ -57,8 +57,8 @@ cause_decomp_func=function(year, sex, cause_list, lt_list){
   readr::read_csv(paste0("./data_cause/Cx_GH", year-2000, ".", sex, ".csv")) -> Cx_next
   readr::read_csv(paste0("./data_cause/Cx_GH", year-2001, ".", sex, ".csv")) -> Cx_prev
   
-  read_csv(file=paste0("./data_cause/cause_", year, "_raw.csv")) -> cause_next
-  read_csv(file=paste0("./data_cause/cause_", year-1, "_raw.csv")) -> cause_prev
+  readr::read_csv(file=paste0("./data_cause/cause_", year, "_raw.csv")) -> cause_next
+  readr::read_csv(file=paste0("./data_cause/cause_", year-1, "_raw.csv")) -> cause_prev
   
   sex2 = tolower(sex)
   
